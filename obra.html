@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obra — Obra Bruta</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Tiago Cardoso</a>
+    <button class="nav-toggle" aria-label="Menu" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#galeria">Trabalhos</a></li>
+      <li><a href="index.html#sobre">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="obra-header">
+    <div>
+      <div class="obra-num-big" id="obraNum">001</div>
+      <h1 class="obra-title-big" id="obraTitulo">Sem Título em Preto</h1>
+    </div>
+    <a href="index.html#galeria" class="btn-outline">← Voltar</a>
+  </div>
+
+  <div class="obra-layout">
+    <div class="obra-image-full">
+      <img id="obraImagem" src="imagens/pintura1.jpg" alt="Obra de arte" />
+    </div>
+    <aside class="obra-ficha">
+      <div class="ficha-row">
+        <div class="ficha-label">Título</div>
+        <div class="ficha-value" id="fichaTitle">Sem Título em Preto</div>
+      </div>
+      <div class="ficha-row">
+        <div class="ficha-label">Técnica</div>
+        <div class="ficha-value" id="fichaTecnica">Técnica mista</div>
+      </div>
+      <div class="ficha-row">
+        <div class="ficha-label">Suporte</div>
+        <div class="ficha-value" id="fichaSuporte">Tela crua</div>
+      </div>
+      <div class="ficha-row">
+        <div class="ficha-label">Ano</div>
+        <div class="ficha-value" id="fichaAno">2026</div>
+      </div>
+      <div class="ficha-row">
+        <div class="ficha-label">Dimensões</div>
+        <div class="ficha-value" id="fichaDim">60 × 60 cm</div>
+      </div>
+      <div class="ficha-row">
+        <div class="ficha-label">Descrição</div>
+        <p class="ficha-text" id="fichaDesc">
+          Tinta acrílica e técnica mista sobre tela crua. Textura densa, quase mineral. A superfície queimada carrega tempo — camadas que sobreviveram ao próprio gesto.
+        </p>
+      </div>
+      <div class="tag-list" id="fichaTags">
+        <span class="tag tag-red">Abstrato</span>
+        <span class="tag tag-yellow">Técnica mista</span>
+        <span class="tag">Acrílica</span>
+      </div>
+      <a href="contato.html" class="btn-solid" style="align-self: flex-start;">Tenho Interesse →</a>
+    </aside>
+  </div>
+
+  <div class="obra-back">
+    <a href="index.html#galeria" class="btn-outline">← Ver todos os trabalhos</a>
+  </div>
+
+  <footer class="footer">
+    <span>© 2026 — Tiago Cardoso</span>
+    <span>Arte Contemporânea Brasileira</span>
+    <span><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></span>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+
+    const obras = {
+      1: {
+        num: "001",
+        titulo: "2026",
+        imagem: "imagens/pintura1.jpg",
+        tecnica: "Óleo sobre tela",
+        suporte: "Tela sobre placa de madeira",
+        ano: "2026",
+        dim: "50 x 50 cm",
+        desc: "Superfície densa e estratificada. Camadas de preto que guardam o gesto, a raspa, o acúmulo. Textura quase mineral, tempo visível na matéria.",
+        tags: ["Abstrato", "Óleo"]
+      },
+      2: {
+        num: "002",
+        titulo: "2026",
+        imagem: "imagens/pintura2.jpg",
+        tecnica: "Escultura",
+        suporte: "Arame e biscuit moldado sobre base em madeira",
+        ano: "2026",
+        dim: "19 x 5 cm",
+        desc: "Duas hastes em arame coberto de biscuit moldado emergem de uma base fundida em madeira. Formas orgânicas que lembram galhos ou ossos — matéria bruta suspensa.",
+        tags: ["Escultura", "Arame", "Biscuit"]
+      },
+      3: {
+        num: "003",
+        titulo: "2026",
+        imagem: "imagens/pintura3.jpg",
+        tecnica: "Óleo sobre tela",
+        suporte: "Tela sobre placa de borracha",
+        ano: "2026",
+        dim: "10 x 10 x 2 cm",
+        desc: "Preto e vermelho escuro em camadas sobrepostas. Um 'a' branco emerge do fundo como signo isolado — letra ou marca, entre texto e gesto. Pequenos pontos vermelhos nos cantos ancoram a composição.",
+        tags: ["Abstrato", "Óleo", "Matéria mista"]
+      },
+      4: {
+        num: "004",
+        titulo: "2026",
+        imagem: "imagens/pintura4.jpg",
+        tecnica: "Óleo sobre tela",
+        suporte: "Tela sobre placa de madeira",
+        ano: "2026",
+        dim: "18 x 12 x 2 cm",
+        desc: "Variação da série preta. Tons de carvão e cinza revelam mais do suporte — a tela respira entre as camadas. A grade implícita divide o espaço em campos de matéria desigual.",
+        tags: ["Abstrato", "Óleo"]
+      },
+      5: {
+        num: "005",
+        titulo: "2026",
+        imagem: "imagens/pintura5.jpg",
+        tecnica: "Óleo sobre tela",
+        suporte: "Tela sobre placa de madeira",
+        ano: "2026",
+        dim: "18 x 12 x 2 cm",
+        desc: "Tela sobre placa de madeira sem chassi. A superfície cede e dobra — o suporte é parte da obra. Ocre, cinza e branco desgastado, como fragmento escavado, antigo.",
+        tags: ["Abstrato", "Óleo"]
+      },
+      6: {
+        num: "006",
+        titulo: "2026",
+        imagem: "imagens/pintura6.jpg",
+        tecnica: "Óleo sobre tela",
+        suporte: "Tela sobre placa de madeira",
+        ano: "2026",
+        dim: "11 x 10 x 2,5 cm",
+        desc: "Pequena tela de tons claros — bege, cinza e lavanda. Um acidente vermelho no centro. Névoa e silêncio. A menor escala intensifica a intimidade da matéria.",
+        tags: ["Abstrato", "Óleo"]
+      },
+      7: {
+        num: "007",
+        titulo: "2026",
+        imagem: "imagens/pintura7.jpg",
+        tecnica: "Óleo sobre tela",
+        suporte: "Tela sobre placa de madeira",
+        ano: "2026",
+        dim: "19 x 13 x 2 cm",
+        desc: "Amarelo irrompendo no preto. Manchas vibrantes no topo e uma forma triangular solitária na base. O contraste é violento e deliberado — luz súbita sobre superfície carbonizada.",
+        tags: ["Abstrato", "Óleo"]
+      }
+    };
+
+
+    const params = new URLSearchParams(window.location.search);
+    const id = parseInt(params.get('id')) || 1;
+    const obra = obras[id] || obras[1];
+
+  
+    document.title = obra.titulo + " — Obra Bruta";
+    document.getElementById('obraNum').textContent = obra.num;
+    document.getElementById('obraTitulo').textContent = obra.titulo;
+    document.getElementById('obraImagem').src = obra.imagem;
+    document.getElementById('obraImagem').alt = obra.titulo;
+    document.getElementById('fichaTitle').textContent = obra.titulo;
+    document.getElementById('fichaTecnica').textContent = obra.tecnica;
+    document.getElementById('fichaSuporte').textContent = obra.suporte;
+    document.getElementById('fichaAno').textContent = obra.ano;
+    document.getElementById('fichaDim').textContent = obra.dim;
+    document.getElementById('fichaDesc').textContent = obra.desc;
+
+    const tagContainer = document.getElementById('fichaTags');
+    tagContainer.innerHTML = '';
+    obra.tags.forEach((t, i) => {
+      const span = document.createElement('span');
+      span.className = 'tag' + (i === 0 ? ' tag-red' : i === 1 ? ' tag-yellow' : '');
+      span.textContent = t;
+      tagContainer.appendChild(span);
+    });
+  </script>
+</body>
+</html>

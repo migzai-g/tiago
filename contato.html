@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — Obra Bruta</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Tiago Cardoso</a>
+    <button class="nav-toggle" aria-label="Menu" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#galeria">Trabalhos</a></li>
+      <li><a href="index.html#sobre">Sobre</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="contato-layout">
+    <div class="contato-info">
+      <span class="section-label">Vamos conversar</span>
+      <h1 class="contato-title">Entre<br>em<br>Contato</h1>
+      <p class="contato-desc">
+        Interessado em adquirir uma obra, fazer uma encomenda ou convidar para uma exposição? Me manda uma mensagem.
+      </p>
+      <div class="contato-links">
+        <div class="contato-link-item">
+          <span>E-mail</span>
+          
+          <a href="mailto:seu@email.com">tiagocardosoarte@gmail.com</a>
+        </div>
+        <div class="contato-link-item">
+          <span>Instagram</span>
+          
+          <a href="https://www.instagram.com/t_______c________/" target="_blank" rel="noopener">@t_______c________/</a>
+        </div>
+        <div class="contato-link-item">
+          <span>Localização</span>
+          <span>Brasil</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contato-form">
+      <form id="contatoForm" action="https://formspree.io/f/xaqvgjzn" method="POST">
+      
+        <div class="form-group">
+          <label class="form-label" for="nome">Nome</label>
+          <input class="form-input" type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">E-mail</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="seu@email.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="assunto">Assunto</label>
+          <input class="form-input" type="text" id="assunto" name="assunto" placeholder="Aquisição / Exposição / Outro">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="mensagem">Mensagem</label>
+          <textarea class="form-textarea" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+        </div>
+        <button type="submit" class="btn-solid">Enviar Mensagem →</button>
+        <p id="formMsg" style="margin-top: 1rem; font-size: 0.7rem; color: #888; display: none;"></p>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>© 2026 — Tiago Cardoso</span>
+    <span>Arte Contemporânea Brasileira</span>
+    <span><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></span>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    
+    document.getElementById('contatoForm').addEventListener('submit', function(e) {
+      const btn = this.querySelector('button[type=submit]');
+      const msg = document.getElementById('formMsg');
+      btn.textContent = 'Enviando...';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        msg.textContent = 'Mensagem enviada! Respondo em breve.';
+        msg.style.display = 'block';
+        msg.style.color = '#f5c518';
+      }, 1500);
+    });
+  </script>
+</body>
+</html>
