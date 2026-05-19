@@ -1,5 +1,0 @@
-Portfólio online de Tiago Cardoso, artista visual brasileiro.
- O site reúne obras em óleo sobre tela e escultura, produzidas em 2026.
-A produção transita entre a gestualidade crua de Cy Twombly, a redução matérica de Malevich, a cor como estrutura em Matisse e a liberdade tropicalista de Hélio Oiticica — com a mesma urgência de fora do sistema que marcou o cinema de Rogério Sganzerla.
- Obras que acumulam camadas, rasgam o suporte e deixam o processo visível.
-O site tem três páginas: galeria principal, página individual de cada obra com ficha técnica, e página de contato. Hospedado gratuitamente via Netlify.
